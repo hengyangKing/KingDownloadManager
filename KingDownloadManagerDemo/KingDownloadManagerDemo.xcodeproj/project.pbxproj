@@ -13,6 +13,9 @@
 		0955ED841EF061FE009E3815 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0955ED821EF061FE009E3815 /* Main.storyboard */; };
 		0955ED861EF061FE009E3815 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0955ED851EF061FE009E3815 /* Assets.xcassets */; };
 		0955ED891EF061FE009E3815 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0955ED871EF061FE009E3815 /* LaunchScreen.storyboard */; };
+		0955ED941EF0670E009E3815 /* KingDownLoadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0955ED931EF0670E009E3815 /* KingDownLoadManager.m */; };
+		0955ED971EF06B19009E3815 /* KingDownLoadManagerFileTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 0955ED961EF06B19009E3815 /* KingDownLoadManagerFileTool.m */; };
+		D156CFBE8D3A4A7E9DE05A8B /* Pods_KingDownloadManagerDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B31623497F7D2FBD10718FCA /* Pods_KingDownloadManagerDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,13 @@
 		0955ED851EF061FE009E3815 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0955ED881EF061FE009E3815 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0955ED8A1EF061FE009E3815 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0955ED921EF0670E009E3815 /* KingDownLoadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KingDownLoadManager.h; sourceTree = "<group>"; };
+		0955ED931EF0670E009E3815 /* KingDownLoadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KingDownLoadManager.m; sourceTree = "<group>"; };
+		0955ED951EF06B19009E3815 /* KingDownLoadManagerFileTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KingDownLoadManagerFileTool.h; sourceTree = "<group>"; };
+		0955ED961EF06B19009E3815 /* KingDownLoadManagerFileTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KingDownLoadManagerFileTool.m; sourceTree = "<group>"; };
+		0AB1B1AD1E57140237481810 /* Pods-KingDownloadManagerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KingDownloadManagerDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-KingDownloadManagerDemo/Pods-KingDownloadManagerDemo.release.xcconfig"; sourceTree = "<group>"; };
+		29551DE421BDD0D61F2C23A4 /* Pods-KingDownloadManagerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KingDownloadManagerDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KingDownloadManagerDemo/Pods-KingDownloadManagerDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		B31623497F7D2FBD10718FCA /* Pods_KingDownloadManagerDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KingDownloadManagerDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D156CFBE8D3A4A7E9DE05A8B /* Pods_KingDownloadManagerDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +55,8 @@
 			children = (
 				0955ED781EF061FE009E3815 /* KingDownloadManagerDemo */,
 				0955ED771EF061FE009E3815 /* Products */,
+				4291D5DFDA177BFB13CB974F /* Pods */,
+				989B576F79D9FF278C700250 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +75,7 @@
 				0955ED7D1EF061FE009E3815 /* AppDelegate.m */,
 				0955ED7F1EF061FE009E3815 /* ViewController.h */,
 				0955ED801EF061FE009E3815 /* ViewController.m */,
+				0955ED911EF06705009E3815 /* manager */,
 				0955ED821EF061FE009E3815 /* Main.storyboard */,
 				0955ED851EF061FE009E3815 /* Assets.xcassets */,
 				0955ED871EF061FE009E3815 /* LaunchScreen.storyboard */,
@@ -79,6 +93,34 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		0955ED911EF06705009E3815 /* manager */ = {
+			isa = PBXGroup;
+			children = (
+				0955ED921EF0670E009E3815 /* KingDownLoadManager.h */,
+				0955ED931EF0670E009E3815 /* KingDownLoadManager.m */,
+				0955ED951EF06B19009E3815 /* KingDownLoadManagerFileTool.h */,
+				0955ED961EF06B19009E3815 /* KingDownLoadManagerFileTool.m */,
+			);
+			path = manager;
+			sourceTree = "<group>";
+		};
+		4291D5DFDA177BFB13CB974F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				29551DE421BDD0D61F2C23A4 /* Pods-KingDownloadManagerDemo.debug.xcconfig */,
+				0AB1B1AD1E57140237481810 /* Pods-KingDownloadManagerDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		989B576F79D9FF278C700250 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B31623497F7D2FBD10718FCA /* Pods_KingDownloadManagerDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +128,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0955ED8D1EF061FE009E3815 /* Build configuration list for PBXNativeTarget "KingDownloadManagerDemo" */;
 			buildPhases = (
+				540C7F68798D7216C7E40EDF /* [CP] Check Pods Manifest.lock */,
 				0955ED721EF061FE009E3815 /* Sources */,
 				0955ED731EF061FE009E3815 /* Frameworks */,
 				0955ED741EF061FE009E3815 /* Resources */,
+				67CE09F7984DB62C68DFB77A /* [CP] Embed Pods Frameworks */,
+				25845EE8DB9582E98CD4DDD8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -146,12 +191,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		25845EE8DB9582E98CD4DDD8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KingDownloadManagerDemo/Pods-KingDownloadManagerDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		540C7F68798D7216C7E40EDF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		67CE09F7984DB62C68DFB77A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KingDownloadManagerDemo/Pods-KingDownloadManagerDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0955ED721EF061FE009E3815 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0955ED941EF0670E009E3815 /* KingDownLoadManager.m in Sources */,
 				0955ED811EF061FE009E3815 /* ViewController.m in Sources */,
+				0955ED971EF06B19009E3815 /* KingDownLoadManagerFileTool.m in Sources */,
 				0955ED7E1EF061FE009E3815 /* AppDelegate.m in Sources */,
 				0955ED7B1EF061FE009E3815 /* main.m in Sources */,
 			);
@@ -271,6 +366,7 @@
 		};
 		0955ED8E1EF061FE009E3815 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29551DE421BDD0D61F2C23A4 /* Pods-KingDownloadManagerDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = GLHBVKZG33;
@@ -283,6 +379,7 @@
 		};
 		0955ED8F1EF061FE009E3815 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0AB1B1AD1E57140237481810 /* Pods-KingDownloadManagerDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = GLHBVKZG33;
@@ -312,6 +409,7 @@
 				0955ED8F1EF061FE009E3815 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

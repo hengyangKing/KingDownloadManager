@@ -1,0 +1,6 @@
+framework module Pods_KingDownloadManagerDemo {
+  umbrella header "Pods-KingDownloadManagerDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}

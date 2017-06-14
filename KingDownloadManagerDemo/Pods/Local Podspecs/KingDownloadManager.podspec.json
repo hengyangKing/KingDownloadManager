@@ -19,5 +19,5 @@
     "KingDownloadManager",
     "KingDownloadManager/**/*.{h,m}"
   ],
-  "frameworks": "CommonCrypto"
+  "frameworks": "Security"
 }

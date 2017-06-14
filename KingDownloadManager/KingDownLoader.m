@@ -12,6 +12,7 @@
 #define kCachePath NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES).firstObject
 //临时地址
 #define kTempPath NSTemporaryDirectory()
+
 @interface KingDownLoader()<NSURLSessionDataDelegate>
 {
     long long _tempSize;
@@ -29,6 +30,8 @@
 @property(nonatomic,strong)NSOutputStream *outpustStream;
 //session 持有 同session共同销毁
 @property(nonatomic,weak)NSURLSessionDataTask *dataTask;
+
+@property(nonatomic,assign)float progress;
 
 @end
 @implementation KingDownLoader
@@ -51,24 +54,65 @@
     self.downloadingPath = [kTempPath stringByAppendingPathComponent:fileName];
     
 }
+-(void)setProgress:(float)progress
+{
+    _progress=progress;
+    if (self.downloadProgressBlock) {
+        self.downloadProgressBlock(_progress);
+    }
+}
+-(void)setState:(KingDownLoaderState)state
+{
+    if (_state==state) {
+        return;
+    }
+    _state=state;
+    if (self.stateChangeBlock) {
+        self.stateChangeBlock(_state);
+    }
+    if (_state==KingDownLoaderStateSuccess&&self.downloadSuccessBlock) {
+        self.downloadSuccessBlock(self.downloadedPath);
+    }
+    
+}
 #pragma mark func
+-(void)downLoadWithUrl:(NSURL *)url andState:(KingDownLoaderStateChangeBlock)state andProgress:(KingDownLoaderDownloadProgressBlock)progress andSuccess:(KingDownLoaderDownloadSuccessBlock)success andFailed:(KingDownLoaderDownloadFailedBlock)failed
+{
+    [self setStateChangeBlock:state];
+    [self setDownloadProgressBlock:progress];
+    [self setDownloadSuccessBlock:success];
+    [self setDownloadFailedBlock:failed];
+    [self downLoadWithUrl:url];
+}
+
+
 -(void)downLoadWithUrl:(NSURL *)url
 {
-    
     if (!url) {
         return;
     }else{
+        //如果任务存在，继续下载
+        if ([url isEqual:self.dataTask.originalRequest.URL]) {
+            if (self.state==KingDownLoaderStatePause) {
+                //判断状态是否为暂停 继续下载
+                [self resumeCurrentTask];
+                return;
+            }
+        }
         self.url=url;
     }
+    
     //    文件的存放
     //    下载ing ->temp+名称
     //    md5房子重复资源
     //    下载完成=>cache +名称
-    
     //    判断url ，对应的资源，是下载完毕(下载完成的目录内存在该文件)
+    //取消当前下载
+    [self cacelCurrentTask];
     if ([KingDownLoadManagerFileTool fileExistsAtPath:self.downloadedPath]) {
+    //    return 下载完成 传递相关信息
+        self.state=KingDownLoaderStateSuccess;
         
-        //    return 下载完成 传递相关信息
         return;
     }
     
@@ -77,6 +121,7 @@
         //    不存在 从0字节开始请求资源
         _tempSize=0;
         [self download];
+        
         return;
     }
     //临时文件大小
@@ -84,18 +129,32 @@
     [self download];
     
 }
+//继续下载
+-(void)resumeCurrentTask
+{
+    //若调用几次暂停 则需要调用几次继续
+    if (self.dataTask&&self.state==KingDownLoaderStatePause) {
+        [self.dataTask resume];
+        self.state=KingDownLoaderStateDownloading;
+    }
+}
 //暂停任务
 -(void)pauseCurrentTask
 {
-    [self.dataTask suspend];
+    //若调用几次继续 则需要调用几次暂停
+    if (self.state==KingDownLoaderStateDownloading) {
+        [self.dataTask suspend];
+        self.state=KingDownLoaderStatePause;
+    }
 }
-
 //取消任务
 -(void)cacelCurrentTask
 {
     [self.session invalidateAndCancel];
     self.session=nil;
     //self.session 所持有的self.dataTask 由于weak引用 所以也同被销毁
+    self.state=KingDownLoaderStatePause;
+
 }
 
 //取消和清空
@@ -103,9 +162,10 @@
 {
     [self cacelCurrentTask];
     //删除缓存
-    [KingDownLoadManagerFileTool removeFile:self.downloadingPath];
+    [KingDownLoadManagerFileTool removeFile:self.downloadedPath];
     
 }
+
 #pragma mark 私有方法
 /**
  下载方法
@@ -120,10 +180,8 @@
     //session 分配的task 默认挂起
     self.dataTask=[self.session dataTaskWithRequest:request];
     //重新挂起task
-    [self.dataTask resume];
-    
+    [self resumeCurrentTask];
 }
-
 #pragma mark NSURLSessionDelegate
 //接受到响应头 调用 只有响应头信息 并没有资源内容 参数response 类型变成NSHTTPURLResponse
 -(void)URLSession:(NSURLSession *)session dataTask:(NSURLSessionDataTask *)dataTask didReceiveResponse:(nonnull NSHTTPURLResponse *)response completionHandler:(nonnull void (^)(NSURLSessionResponseDisposition))completionHandler
@@ -137,11 +195,16 @@
         //    [@"Content-Range"]字段在某些情况下 只有在请求头设置过才会有
         _totalSize = [[[contentRangStr componentsSeparatedByString:@"/"]lastObject] longLongValue];
     }
+    if (self.downloadInfoBlock) {
+        self.downloadInfoBlock(_totalSize);
+    }
     if (_tempSize == _totalSize) {
         //移动到下载完成文件夹
         [KingDownLoadManagerFileTool moveFile:self.downloadingPath toPath:self.downloadedPath];
         //        取消本次请求
         completionHandler(NSURLSessionResponseCancel);
+        self.state=KingDownLoaderStateSuccess;
+        
         return;
     }
     if (_tempSize>_totalSize) {
@@ -155,6 +218,7 @@
         return;
     }
     
+    self.state=KingDownLoaderStateDownloading;
     //打开数据流
     self.outpustStream=[NSOutputStream outputStreamToFileAtPath:self.downloadingPath append:YES];
     [self.outpustStream open];
@@ -164,6 +228,8 @@
 //确定接收数据调用
 -(void)URLSession:(NSURLSession *)session dataTask:(NSURLSessionDataTask *)dataTask didReceiveData:(NSData *)data
 {
+    _tempSize+=data.length;
+    self.progress=1.0 * _tempSize/_totalSize;
     //写入数据流
     [self.outpustStream write:data.bytes maxLength:data.length];
 }
@@ -171,18 +237,19 @@
 -(void)URLSession:(NSURLSession *)session task:(NSURLSessionTask *)task didCompleteWithError:(NSError *)error
 {
     if (error) {
-        //错误
+        self.state=(error.code==-999)?KingDownLoaderStatePause:KingDownLoaderStateFailed;
+        if (self.state==KingDownLoaderStateFailed&&self.downloadFailedBlock) {
+            self.downloadFailedBlock(error);
+        }
     }else{
         //        判断本地缓存==文件总大小
         //        如果=> 验证，是否文件完整，对比md5摘要
-        
-        
+        [KingDownLoadManagerFileTool moveFile:self.downloadingPath toPath:self.downloadedPath];
+        self.state=KingDownLoaderStateSuccess;
     }
     //    关闭数据流
     [self.outpustStream close];
 }
-
-
 
 
 @end

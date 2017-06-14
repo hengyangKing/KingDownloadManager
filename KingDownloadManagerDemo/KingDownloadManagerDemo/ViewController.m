@@ -7,18 +7,40 @@
 //
 
 #import "ViewController.h"
-
+#import "KingDownLoadManager.h"
 @interface ViewController ()
-
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
 }
+- (IBAction)download:(id)sender {
+    
+    NSString *str=@"http://pop.nosdn.127.net/bd17bcf2-ce68-4c03-bfff-2e8e9f9dd813.jpg?imageView&thumbnail=64x0&quality=85";
+    [[KingDownLoadManager shareInstance]downLoadWithUrl:[NSURL URLWithString:str] andState:^(KingDownLoaderState newState) {
+        NSLog(@"newState---%@",@(newState));
+    } andProgress:^(float progress) {
+        NSLog(@"progress---%@",@(progress));
+    } andSuccess:^(NSString *filePath) {
+        NSLog(@"filePath--%@",filePath);
+    } andFailed:^(NSError *error) {
+        NSLog(@"error--%@",error);
+    }];
+}
+- (IBAction)pause:(id)sender {
+    [[KingDownLoadManager shareInstance] pauseAll];
+}
+- (IBAction)cacel:(id)sender {
+    [[KingDownLoadManager shareInstance] cacelAll];
 
+}
+- (IBAction)path:(id)sender {
+    
+    NSLog(@"%@",NSHomeDirectory());
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

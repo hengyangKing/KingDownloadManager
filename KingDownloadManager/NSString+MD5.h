@@ -1,5 +1,5 @@
 //
-//  KingDownLoadManager.h
+//  NSString+MD5.h
 //  KingDownloadManagerDemo
 //
 //  Created by J on 2017/6/14.
@@ -7,9 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-
-@interface KingDownLoadManager : NSObject
-
+#import <CommonCrypto/CommonDigest.h>
+@interface NSString (MD5)
+-(NSString *)MD5;
 
 
 @end

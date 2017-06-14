@@ -9,5 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @interface KingDownLoadManager : NSObject
--(void)downLoadWithUrl:(NSURL *)url;
+
+
+
 @end

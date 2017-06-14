@@ -15,6 +15,7 @@
 		0955ED891EF061FE009E3815 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0955ED871EF061FE009E3815 /* LaunchScreen.storyboard */; };
 		0955ED941EF0670E009E3815 /* KingDownLoadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0955ED931EF0670E009E3815 /* KingDownLoadManager.m */; };
 		0955ED971EF06B19009E3815 /* KingDownLoadManagerFileTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 0955ED961EF06B19009E3815 /* KingDownLoadManagerFileTool.m */; };
+		0955ED9A1EF0FDD7009E3815 /* KingDownLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 0955ED991EF0FDD7009E3815 /* KingDownLoader.m */; };
 		D156CFBE8D3A4A7E9DE05A8B /* Pods_KingDownloadManagerDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B31623497F7D2FBD10718FCA /* Pods_KingDownloadManagerDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +34,8 @@
 		0955ED931EF0670E009E3815 /* KingDownLoadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KingDownLoadManager.m; sourceTree = "<group>"; };
 		0955ED951EF06B19009E3815 /* KingDownLoadManagerFileTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KingDownLoadManagerFileTool.h; sourceTree = "<group>"; };
 		0955ED961EF06B19009E3815 /* KingDownLoadManagerFileTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KingDownLoadManagerFileTool.m; sourceTree = "<group>"; };
+		0955ED981EF0FDD7009E3815 /* KingDownLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KingDownLoader.h; sourceTree = "<group>"; };
+		0955ED991EF0FDD7009E3815 /* KingDownLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KingDownLoader.m; sourceTree = "<group>"; };
 		0AB1B1AD1E57140237481810 /* Pods-KingDownloadManagerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KingDownloadManagerDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-KingDownloadManagerDemo/Pods-KingDownloadManagerDemo.release.xcconfig"; sourceTree = "<group>"; };
 		29551DE421BDD0D61F2C23A4 /* Pods-KingDownloadManagerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KingDownloadManagerDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KingDownloadManagerDemo/Pods-KingDownloadManagerDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		B31623497F7D2FBD10718FCA /* Pods_KingDownloadManagerDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KingDownloadManagerDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -100,6 +103,8 @@
 				0955ED931EF0670E009E3815 /* KingDownLoadManager.m */,
 				0955ED951EF06B19009E3815 /* KingDownLoadManagerFileTool.h */,
 				0955ED961EF06B19009E3815 /* KingDownLoadManagerFileTool.m */,
+				0955ED981EF0FDD7009E3815 /* KingDownLoader.h */,
+				0955ED991EF0FDD7009E3815 /* KingDownLoader.m */,
 			);
 			path = manager;
 			sourceTree = "<group>";
@@ -247,6 +252,7 @@
 				0955ED941EF0670E009E3815 /* KingDownLoadManager.m in Sources */,
 				0955ED811EF061FE009E3815 /* ViewController.m in Sources */,
 				0955ED971EF06B19009E3815 /* KingDownLoadManagerFileTool.m in Sources */,
+				0955ED9A1EF0FDD7009E3815 /* KingDownLoader.m in Sources */,
 				0955ED7E1EF061FE009E3815 /* AppDelegate.m in Sources */,
 				0955ED7B1EF061FE009E3815 /* main.m in Sources */,
 			);

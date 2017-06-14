@@ -40,14 +40,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		41CF2072A4E30384BC40F94EEBB50211 /* KingDownloadManager */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = KingDownloadManager;
-			path = ../..;
-			sourceTree = "<group>";
-		};
 		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -60,7 +52,6 @@
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				C62FC5249B3D7C99A37641C0A813FD8A /* Development Pods */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
 				EC29A3A5A4731009B4649C107EB2755D /* Products */,
 				860420C8BB9B315843485B68C9C0E907 /* Targets Support Files */,
@@ -99,14 +90,6 @@
 				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		C62FC5249B3D7C99A37641C0A813FD8A /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				41CF2072A4E30384BC40F94EEBB50211 /* KingDownloadManager */,
-			);
-			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		EC29A3A5A4731009B4649C107EB2755D /* Products */ = {

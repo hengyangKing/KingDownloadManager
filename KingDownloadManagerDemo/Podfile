@@ -3,7 +3,7 @@ use_frameworks!
 platform :ios, '8.0'
 
 target 'KingDownloadManagerDemo' do
-   pod 'KingDownloadManager', :path =>'../'
+   #pod 'KingDownloadManager', :path =>'../'
 
 
 end

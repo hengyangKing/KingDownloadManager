@@ -18,5 +18,6 @@
   "source_files": [
     "KingDownloadManager",
     "KingDownloadManager/**/*.{h,m}"
-  ]
+  ],
+  "frameworks": "CommonCrypto"
 }

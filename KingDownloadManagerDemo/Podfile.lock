@@ -1,16 +1,3 @@
-PODS:
-  - KingDownloadManager (0.0.1)
-
-DEPENDENCIES:
-  - KingDownloadManager (from `../`)
-
-EXTERNAL SOURCES:
-  KingDownloadManager:
-    :path: ../
-
-SPEC CHECKSUMS:
-  KingDownloadManager: c74fbc0ddee2dcb79cc87a49d1f945d2f6c45b2f
-
-PODFILE CHECKSUM: f07eb01ab09067751b5ae78a8c3729761417b78c
+PODFILE CHECKSUM: 24b1f94a248f4b29a5a9062c30c57efe65907972
 
 COCOAPODS: 1.1.1

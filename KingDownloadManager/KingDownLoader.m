@@ -37,9 +37,18 @@
 
 @property(nonatomic,assign)float progress;
 
+@property(nonatomic,assign)NSTimeInterval timeInterval;
 
 @end
 @implementation KingDownLoader
+-(instancetype)init {
+    self = [super init];
+    if (self) {
+        self.timeInterval = 0;
+        self.savePath = kCachePath;
+    }
+    return self;
+}
 #pragma mark lazy
 -(NSURLSession *)session
 {
@@ -80,10 +89,12 @@
     
 }
 #pragma mark func
--(void)downLoadWithUrl:(NSURL *)url andSavePath:(NSString *)savePath andState:(KingDownLoaderStateChangeBlock)state andProgress:(KingDownLoaderDownloadProgressBlock)progress andSuccess:(KingDownLoaderDownloadSuccessBlock)success andFailed:(KingDownLoaderDownloadFailedBlock)failed {
-    
-    [self setSavePath:savePath];
-    [self downLoadWithUrl:url andState:state andProgress:progress andSuccess:success andFailed:failed];
+-(void)downLoadWithConfig:(KingDownLoadConfig *)config andState:(KingDownLoaderStateChangeBlock)state andProgress:(KingDownLoaderDownloadProgressBlock)progress andSuccess:(KingDownLoaderDownloadSuccessBlock)success andFailed:(KingDownLoaderDownloadFailedBlock)failed {
+    if (!config) {return;}
+    if (![config guardConfig]) {return;}
+    [self setSavePath:config.savePath];
+    [self setTimeInterval:config.timeoutInterval];
+    [self downLoadWithUrl:config.url andState:state andProgress:progress andSuccess:success andFailed:failed];
 }
 -(void)downLoadWithUrl:(NSURL *)url andState:(KingDownLoaderStateChangeBlock)state andProgress:(KingDownLoaderDownloadProgressBlock)progress andSuccess:(KingDownLoaderDownloadSuccessBlock)success andFailed:(KingDownLoaderDownloadFailedBlock)failed
 {
@@ -182,7 +193,7 @@
 -(void)download
 {
     //忽略本地数据缓存
-    NSMutableURLRequest *request=[NSMutableURLRequest requestWithURL:self.url cachePolicy:NSURLRequestReloadIgnoringLocalCacheData timeoutInterval:0];
+    NSMutableURLRequest *request=[NSMutableURLRequest requestWithURL:self.url cachePolicy:NSURLRequestReloadIgnoringLocalCacheData timeoutInterval:self.timeInterval];
     //设置请求头Range字段为bytes=
     [request setValue:[NSString stringWithFormat:@"bytes=%lld-",_tempSize] forHTTPHeaderField:@"Range"];
     

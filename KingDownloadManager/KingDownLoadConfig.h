@@ -6,6 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#define kCachePath NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES).firstObject
 
 @interface KingDownLoadConfig : NSObject
 @property(nonatomic,strong,readonly)NSURL *url;

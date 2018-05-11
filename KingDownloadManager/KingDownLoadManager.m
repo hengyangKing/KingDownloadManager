@@ -52,7 +52,7 @@ static KingDownLoadManager *_shareInstance;
     KingDownLoadConfig *downLoadConfig = [KingDownLoadConfig defaultConfig];
     !config?:config(downLoadConfig);
     if ([downLoadConfig guardConfig]) {
-        [[self.downloaderInfo getDownLoaderWithURL:downLoadConfig.url] downLoadWithUrl:downLoadConfig.url andState:state andProgress:progress andSuccess:success andFailed:failed];
+        [[self.downloaderInfo getDownLoaderWithURL:downLoadConfig.url] downLoadWithConfig:downLoadConfig andState:state andProgress:progress andSuccess:success andFailed:failed];
     }
 }
 -(void)downLoadWithUrl:(NSURL *)url andState:(KingDownLoaderStateChangeBlock)state andProgress:(KingDownLoaderDownloadProgressBlock)progress andSuccess:(KingDownLoaderDownloadSuccessBlock)success andFailed:(KingDownLoaderDownloadFailedBlock)failed {

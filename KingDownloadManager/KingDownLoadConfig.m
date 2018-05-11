@@ -6,7 +6,6 @@
 //
 
 #import "KingDownLoadConfig.h"
-#define kCachePath NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES).firstObject
 
 @implementation KingDownLoadConfig
 -(void)setUrl:(NSURL *)url {
@@ -47,6 +46,7 @@
     if (!self.savePath.length) {return NO;}
     if (!self.url) {return NO;}
     if (!self.url.absoluteString.length) {return NO;}
+    if (self.timeoutInterval<0) {return NO;}
     return YES;
 }
 @end

@@ -8,7 +8,6 @@
 
 #import <Foundation/Foundation.h>
 #import "KingDownloadManagerInfo.h"
-#import "KingDownLoadConfig.h"
 @interface KingDownLoadManager : NSObject
 
 +(instancetype)shareInstance;

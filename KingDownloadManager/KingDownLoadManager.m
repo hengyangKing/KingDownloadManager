@@ -47,10 +47,15 @@ static KingDownLoadManager *_shareInstance;
     }
     return _downloaderInfo;
 }
-
--(void)downLoadWithUrl:(NSURL *)url andState:(KingDownLoaderStateChangeBlock)state andProgress:(KingDownLoaderDownloadProgressBlock)progress andSuccess:(KingDownLoaderDownloadSuccessBlock)success andFailed:(KingDownLoaderDownloadFailedBlock)failed
-{
+-(void)downLoadWithConfig:(void(^)(KingDownLoadConfig *config))config andState:(KingDownLoaderStateChangeBlock)state andProgress:(KingDownLoaderDownloadProgressBlock)progress andSuccess:(KingDownLoaderDownloadSuccessBlock)success andFailed:(KingDownLoaderDownloadFailedBlock)failed {
     
+    KingDownLoadConfig *downLoadConfig = [KingDownLoadConfig defaultConfig];
+    !config?:config(downLoadConfig);
+    if ([downLoadConfig guardConfig]) {
+        [[self.downloaderInfo getDownLoaderWithURL:downLoadConfig.url] downLoadWithUrl:downLoadConfig.url andState:state andProgress:progress andSuccess:success andFailed:failed];
+    }
+}
+-(void)downLoadWithUrl:(NSURL *)url andState:(KingDownLoaderStateChangeBlock)state andProgress:(KingDownLoaderDownloadProgressBlock)progress andSuccess:(KingDownLoaderDownloadSuccessBlock)success andFailed:(KingDownLoaderDownloadFailedBlock)failed {
     [[self.downloaderInfo getDownLoaderWithURL:url] downLoadWithUrl:url andState:state andProgress:progress andSuccess:^(NSString *filePath) {
         //移除
         [self.downloaderInfo removeObjectForKey:url.absoluteString.MD5];
@@ -58,11 +63,6 @@ static KingDownLoadManager *_shareInstance;
             success(filePath);
         }
     } andFailed:failed];
-    
-    
-    
-    
-    
 }
 -(void)pauseWithURL:(NSURL *)url
 {

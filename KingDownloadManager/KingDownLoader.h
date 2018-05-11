@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-
 typedef NS_ENUM(NSUInteger,KingDownLoaderState) {
     KingDownLoaderStatePause = 0,
     KingDownLoaderStateDownloading,
@@ -22,7 +21,30 @@ typedef void(^KingDownLoaderDownloadFailedBlock)(NSError *error);
 
 //单任务下载器
 @interface KingDownLoader : NSObject
-//下载任务 且带有各种状态
+
+
+/**
+ 定义下载路径下载任务
+
+ @param url url
+ @param savePath 下载路径
+ @param state 状态
+ @param progress 进度
+ @param success 成功回调
+ @param failed 失败回调
+ */
+-(void)downLoadWithUrl:(NSURL *)url andSavePath:(NSString *)savePath andState:(KingDownLoaderStateChangeBlock)state andProgress:(KingDownLoaderDownloadProgressBlock)progress andSuccess:(KingDownLoaderDownloadSuccessBlock)success andFailed:(KingDownLoaderDownloadFailedBlock)failed ;
+
+
+/**
+ 默认下载任务
+
+ @param url url
+ @param state 状态
+ @param progress 进度
+ @param success 成功回调
+ @param failed 失败回调
+ */
 -(void)downLoadWithUrl:(NSURL *)url andState:(KingDownLoaderStateChangeBlock)state andProgress:(KingDownLoaderDownloadProgressBlock)progress andSuccess:(KingDownLoaderDownloadSuccessBlock)success andFailed:(KingDownLoaderDownloadFailedBlock)failed;
 
 

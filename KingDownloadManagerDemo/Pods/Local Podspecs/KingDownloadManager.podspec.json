@@ -18,6 +18,5 @@
   "source_files": [
     "KingDownloadManager",
     "KingDownloadManager/**/*.{h,m}"
-  ],
-  "frameworks": "Security"
+  ]
 }

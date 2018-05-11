@@ -6,11 +6,11 @@ DEPENDENCIES:
 
 EXTERNAL SOURCES:
   KingDownloadManager:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
-  KingDownloadManager: dc5c0b21d77b73663fcddf530ebc3cb914c92216
+  KingDownloadManager: dfeceab67f8dc9d1c02a2b5c234799e88b270be2
 
 PODFILE CHECKSUM: 744608c7d62428eda63dfb3125c7911cc9186d0f
 
-COCOAPODS: 1.1.1
+COCOAPODS: 1.5.0

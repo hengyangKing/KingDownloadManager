@@ -7,23 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		132820D463A5D420FEDE9B810570DA1C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4690263E3C2DD3C24DEAC554FFBD486 /* Foundation.framework */; };
-		140C9F2A21E2A8B0E28EB9565C08F9B0 /* KingDownLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FB05DF117D06CA527C51B1C3DAD58FA /* KingDownLoader.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		17C4A8852BE1C0790BCEF0F3F92F5904 /* KingDownLoadManagerFileTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 101E4961A9B0EB550FA5A66A8936D905 /* KingDownLoadManagerFileTool.m */; };
-		1809A581F3DAA79CD579E74114A266DC /* KingDownloadManager-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 557C102DB114F9843E6C517D765FF9F4 /* KingDownloadManager-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		219438AE2B46A336CDC93FE8EB41B8DA /* KingDownLoadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 23B56C6940EE906014F37BE11E490CA5 /* KingDownLoadManager.m */; };
-		3B456CF2ADCF24DD580EBD0DF61E52D3 /* KingDownloadManagerInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = FDFB335EC5C646C1E402E9117252B560 /* KingDownloadManagerInfo.m */; };
-		5DB5F745F8635ED48F139BF8879B6457 /* KingDownLoadManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E2CDF4DE4BA3D3EA08F35AC63DD460B /* KingDownLoadManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6083C4ACE91A62644FB5C837839A7CEF /* KingDownloadManagerInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 973EA07D169FCA3F2390AFBC16656B42 /* KingDownloadManagerInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		73B951AA746A658B79FC3F2522EE5202 /* NSString+MD5.h in Headers */ = {isa = PBXBuildFile; fileRef = 69E17AF3F2DDA69B9CCA8C6D7F23BEAB /* NSString+MD5.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		84BD4E4EFE7F16A067CDBF2D49910396 /* KingDownloadManager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B586ED72669087C14B352F0303B7645B /* KingDownloadManager-dummy.m */; };
-		887DA142FC8425D0AA04142294AB5E8F /* KingDownLoadManagerFileTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 83274E7B22E642C31B612A18B878567D /* KingDownLoadManagerFileTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8A2D5BF56ED16C36762FE814A9214EDE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4690263E3C2DD3C24DEAC554FFBD486 /* Foundation.framework */; };
-		9F0DE35510464C1D1F166AFAB4504B74 /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 223788E1ACA9E94E4D995CD5E3BE4274 /* NSString+MD5.m */; };
-		AC7272ECEB2959FC69D26B03232DB99A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAFD15069DBFFAF7E7CD48183E2D230C /* Security.framework */; };
-		BB96DDCFE2029B6F3CB07BD82B948C74 /* Pods-KingDownloadManagerDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D886DA35BABC04DC0CA9C1F4AFEBCC88 /* Pods-KingDownloadManagerDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BEBA16EC42E9F15736184ABBB6923E87 /* Pods-KingDownloadManagerDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 750A3BE4CA7A4EDB9F8FE2F2FF21574D /* Pods-KingDownloadManagerDemo-dummy.m */; };
-		F8AD9D20ED89EC78D01EC62AE8316071 /* KingDownLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 95DCF3F1AE7C649F12522342C8083366 /* KingDownLoader.m */; };
+		050BCDE7BD879E4E676BDD505A7EFDA6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		1259052A8C1E292453F6BAC25DCFB9EC /* KingDownLoadConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 51F057651D5F454FB7EEA6890384B8E8 /* KingDownLoadConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1EE13EE5A70638EC98E9CF5EA3969B81 /* KingDownLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 6553B8ACB5B0E90F47D9EBCBC2BAFF82 /* KingDownLoader.m */; };
+		20C4593C184E9542BBD55DCBE4C5F9A3 /* KingDownLoadManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 55383556B6353D4D2C6E54428D4F3A89 /* KingDownLoadManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7D98723440E4F92DF53B777EDCA708AE /* KingDownloadManagerInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 01642C67C99F157F0CE3965965397755 /* KingDownloadManagerInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7DC542C06D0247953FEAF6583E93AFC3 /* KingDownLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = 1794386EF36564C584458555016B3C90 /* KingDownLoader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8A0D494CF2DBF22718931A84952E6E82 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		9F8E5CD51C488C282F8026891DA49DF9 /* KingDownloadManager-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 402CF1376C2CC13DEC122341660DCDB3 /* KingDownloadManager-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9FFF36AA85B568F54F456C97D573A42D /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E4DBE9578F1276713FBB7A29EF09080 /* NSString+MD5.m */; };
+		A6E5640DA5CDCD05C8AF79DD85CBC3A8 /* KingDownloadManager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A10C3800D88942B3D556FAC85EEA9E8C /* KingDownloadManager-dummy.m */; };
+		A73E61E98118AE5A5BA7B3106A7EF65E /* KingDownLoadManagerFileTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 72E8B579630FEE81D28BEECC9734668F /* KingDownLoadManagerFileTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BB96DDCFE2029B6F3CB07BD82B948C74 /* Pods-KingDownloadManagerDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AE988DF9B2224843F6606C355AD45535 /* Pods-KingDownloadManagerDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BEBA16EC42E9F15736184ABBB6923E87 /* Pods-KingDownloadManagerDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D9EA023398EBCB2EAEB54F0E5B0A39B /* Pods-KingDownloadManagerDemo-dummy.m */; };
+		C2074816AE2236BF86570C6C6D6C565A /* KingDownLoadManagerFileTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D3EB8BC26A5A495AC999029BB29FE76C /* KingDownLoadManagerFileTool.m */; };
+		C8A7A91C015D3449CC99A4BDAE94DE47 /* KingDownLoadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 94958D44B9AC8C9784828E649FBE2082 /* KingDownLoadManager.m */; };
+		CC3904653D6F0693B2AFBF19E8E4F49A /* KingDownLoadConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 9316A55E277ADC3D5E62BCCA64967DF1 /* KingDownLoadConfig.m */; };
+		D687B62D0BA5A225FD276BA591B1E116 /* KingDownloadManagerInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = FA05BB565640C88C634EED07B6481FAB /* KingDownloadManagerInfo.m */; };
+		D78261B5B8DCF5510554DDF084CA03F7 /* NSString+MD5.h in Headers */ = {isa = PBXBuildFile; fileRef = E49A4295476C3EF0948580A5BA83F3EA /* NSString+MD5.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,52 +32,55 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 1C711F5071E6BC85193929A37A974FED;
+			remoteGlobalIDString = 2A090C7424C67985C2FAB8248C93079F;
 			remoteInfo = KingDownloadManager;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		101E4961A9B0EB550FA5A66A8936D905 /* KingDownLoadManagerFileTool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = KingDownLoadManagerFileTool.m; sourceTree = "<group>"; };
-		14494449A1587D5BAAA82D8E33378D02 /* Pods-KingDownloadManagerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KingDownloadManagerDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		212A28EDBDB8A089BE181C10AC8F936F /* KingDownloadManager-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KingDownloadManager-prefix.pch"; sourceTree = "<group>"; };
-		223788E1ACA9E94E4D995CD5E3BE4274 /* NSString+MD5.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
-		23B56C6940EE906014F37BE11E490CA5 /* KingDownLoadManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = KingDownLoadManager.m; sourceTree = "<group>"; };
-		40CF50A2A927F9D2CCCF1A830C93367D /* Pods-KingDownloadManagerDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KingDownloadManagerDemo-acknowledgements.plist"; sourceTree = "<group>"; };
-		4EA2E93D03641B004A44F4E9BD78D410 /* KingDownloadManager.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = KingDownloadManager.modulemap; sourceTree = "<group>"; };
-		52B7809A5B9792A8A14BBB697920ABF4 /* Pods-KingDownloadManagerDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KingDownloadManagerDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
-		557C102DB114F9843E6C517D765FF9F4 /* KingDownloadManager-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KingDownloadManager-umbrella.h"; sourceTree = "<group>"; };
-		5E2CDF4DE4BA3D3EA08F35AC63DD460B /* KingDownLoadManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KingDownLoadManager.h; sourceTree = "<group>"; };
-		6003EB8B13EE6C7EF4D98476FA22F1E2 /* KingDownloadManager.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KingDownloadManager.xcconfig; sourceTree = "<group>"; };
-		69E17AF3F2DDA69B9CCA8C6D7F23BEAB /* NSString+MD5.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5.h"; sourceTree = "<group>"; };
-		750A3BE4CA7A4EDB9F8FE2F2FF21574D /* Pods-KingDownloadManagerDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KingDownloadManagerDemo-dummy.m"; sourceTree = "<group>"; };
-		7FB05DF117D06CA527C51B1C3DAD58FA /* KingDownLoader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KingDownLoader.h; sourceTree = "<group>"; };
-		83274E7B22E642C31B612A18B878567D /* KingDownLoadManagerFileTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KingDownLoadManagerFileTool.h; sourceTree = "<group>"; };
+		01642C67C99F157F0CE3965965397755 /* KingDownloadManagerInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KingDownloadManagerInfo.h; path = KingDownloadManager/KingDownloadManagerInfo.h; sourceTree = "<group>"; };
+		0B565AD5A4EE51AC4FF87452B7B61FBC /* Pods-KingDownloadManagerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KingDownloadManagerDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		0C1FA8A6326A97B9BD19487FC98CA03B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		1794386EF36564C584458555016B3C90 /* KingDownLoader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KingDownLoader.h; path = KingDownloadManager/KingDownLoader.h; sourceTree = "<group>"; };
+		2177C92483C344813913FED36471613F /* Pods-KingDownloadManagerDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-KingDownloadManagerDemo.modulemap"; sourceTree = "<group>"; };
+		3D265C88A720684BBB5A9F071C025FF3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		402CF1376C2CC13DEC122341660DCDB3 /* KingDownloadManager-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KingDownloadManager-umbrella.h"; sourceTree = "<group>"; };
+		48C7D12D910836C47D5930C74F046ABC /* Pods-KingDownloadManagerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KingDownloadManagerDemo.release.xcconfig"; sourceTree = "<group>"; };
+		51F057651D5F454FB7EEA6890384B8E8 /* KingDownLoadConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KingDownLoadConfig.h; path = KingDownloadManager/KingDownLoadConfig.h; sourceTree = "<group>"; };
+		54ADFFC1B5EDB8D97D569B6A43E01FD8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55383556B6353D4D2C6E54428D4F3A89 /* KingDownLoadManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KingDownLoadManager.h; path = KingDownloadManager/KingDownLoadManager.h; sourceTree = "<group>"; };
+		589E6C23E9A2E8E5F9DE111053286997 /* KingDownloadManager.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = KingDownloadManager.modulemap; sourceTree = "<group>"; };
+		5D9EA023398EBCB2EAEB54F0E5B0A39B /* Pods-KingDownloadManagerDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KingDownloadManagerDemo-dummy.m"; sourceTree = "<group>"; };
+		63FDCAA23035F8962D1F5460ABDB6B20 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6553B8ACB5B0E90F47D9EBCBC2BAFF82 /* KingDownLoader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KingDownLoader.m; path = KingDownloadManager/KingDownLoader.m; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		72E8B579630FEE81D28BEECC9734668F /* KingDownLoadManagerFileTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KingDownLoadManagerFileTool.h; path = KingDownloadManager/KingDownLoadManagerFileTool.h; sourceTree = "<group>"; };
+		7C2BE6BB11AF432E74CB6413B3F610BC /* Pods-KingDownloadManagerDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KingDownloadManagerDemo-resources.sh"; sourceTree = "<group>"; };
 		83DEF8074D768B30F9490AC33BEF090D /* KingDownloadManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = KingDownloadManager.framework; path = KingDownloadManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9316A55E277ADC3D5E62BCCA64967DF1 /* KingDownLoadConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KingDownLoadConfig.m; path = KingDownloadManager/KingDownLoadConfig.m; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		95DCF3F1AE7C649F12522342C8083366 /* KingDownLoader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = KingDownLoader.m; sourceTree = "<group>"; };
-		973EA07D169FCA3F2390AFBC16656B42 /* KingDownloadManagerInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KingDownloadManagerInfo.h; sourceTree = "<group>"; };
-		AD1BB930167364AB3AB0F920ABB42FCC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B4690263E3C2DD3C24DEAC554FFBD486 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		B586ED72669087C14B352F0303B7645B /* KingDownloadManager-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KingDownloadManager-dummy.m"; sourceTree = "<group>"; };
-		B6627CD03CD37562ACB5A20C44823553 /* Pods-KingDownloadManagerDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KingDownloadManagerDemo-frameworks.sh"; sourceTree = "<group>"; };
-		BA837903418D52F93D673E269301AB7A /* Pods-KingDownloadManagerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KingDownloadManagerDemo.release.xcconfig"; sourceTree = "<group>"; };
-		CAFD15069DBFFAF7E7CD48183E2D230C /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
-		D67B340188AF3D5A953FF421E0BFC996 /* Pods-KingDownloadManagerDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KingDownloadManagerDemo-resources.sh"; sourceTree = "<group>"; };
-		D886DA35BABC04DC0CA9C1F4AFEBCC88 /* Pods-KingDownloadManagerDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KingDownloadManagerDemo-umbrella.h"; sourceTree = "<group>"; };
+		947F504362836957E7A92DC108B963CE /* Pods-KingDownloadManagerDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KingDownloadManagerDemo-acknowledgements.plist"; sourceTree = "<group>"; };
+		94958D44B9AC8C9784828E649FBE2082 /* KingDownLoadManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KingDownLoadManager.m; path = KingDownloadManager/KingDownLoadManager.m; sourceTree = "<group>"; };
+		9A90D46FE828544865047D488975060D /* KingDownloadManager-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KingDownloadManager-prefix.pch"; sourceTree = "<group>"; };
+		9E3ACE8B535A9DB1BAC483A8795300A9 /* Pods-KingDownloadManagerDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KingDownloadManagerDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9E4DBE9578F1276713FBB7A29EF09080 /* NSString+MD5.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+MD5.m"; path = "KingDownloadManager/NSString+MD5.m"; sourceTree = "<group>"; };
+		A10C3800D88942B3D556FAC85EEA9E8C /* KingDownloadManager-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KingDownloadManager-dummy.m"; sourceTree = "<group>"; };
+		AE988DF9B2224843F6606C355AD45535 /* Pods-KingDownloadManagerDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KingDownloadManagerDemo-umbrella.h"; sourceTree = "<group>"; };
+		C3A1EEEC32FC4489098669F3BB27AC68 /* Pods-KingDownloadManagerDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KingDownloadManagerDemo-frameworks.sh"; sourceTree = "<group>"; };
+		D3EB8BC26A5A495AC999029BB29FE76C /* KingDownLoadManagerFileTool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KingDownLoadManagerFileTool.m; path = KingDownloadManager/KingDownLoadManagerFileTool.m; sourceTree = "<group>"; };
+		DBB0ABB5795FD6931E9AA16555BD54BB /* KingDownloadManager.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KingDownloadManager.xcconfig; sourceTree = "<group>"; };
+		E49A4295476C3EF0948580A5BA83F3EA /* NSString+MD5.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+MD5.h"; path = "KingDownloadManager/NSString+MD5.h"; sourceTree = "<group>"; };
 		E4EEA7F0E989ED8B9CAF15E1A680F1CB /* Pods_KingDownloadManagerDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_KingDownloadManagerDemo.framework; path = "Pods-KingDownloadManagerDemo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		EB06F43364B64D04B20B9D206F815A61 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EF9AF30B3D7FF3A0998FD91A739181FA /* Pods-KingDownloadManagerDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-KingDownloadManagerDemo.modulemap"; sourceTree = "<group>"; };
-		FDFB335EC5C646C1E402E9117252B560 /* KingDownloadManagerInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = KingDownloadManagerInfo.m; sourceTree = "<group>"; };
+		ECCDB406E52821E85F4DFA69E3002473 /* KingDownloadManager.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = KingDownloadManager.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		FA05BB565640C88C634EED07B6481FAB /* KingDownloadManagerInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KingDownloadManagerInfo.m; path = KingDownloadManager/KingDownloadManagerInfo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		9E89B930F1C13CCAC56B4A817BA125E2 /* Frameworks */ = {
+		233A2D8D53D6D5947B3C83A0913FB47C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A2D5BF56ED16C36762FE814A9214EDE /* Foundation.framework in Frameworks */,
-				AC7272ECEB2959FC69D26B03232DB99A /* Security.framework in Frameworks */,
+				8A0D494CF2DBF22718931A84952E6E82 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,76 +88,67 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				132820D463A5D420FEDE9B810570DA1C /* Foundation.framework in Frameworks */,
+				050BCDE7BD879E4E676BDD505A7EFDA6 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1B83C09BAFE9E5A840F869B2856E399E /* Support Files */ = {
+		1AFECC46A07E57F70149CE01177FE63F /* KingDownloadManager */ = {
 			isa = PBXGroup;
 			children = (
-				EB06F43364B64D04B20B9D206F815A61 /* Info.plist */,
-				4EA2E93D03641B004A44F4E9BD78D410 /* KingDownloadManager.modulemap */,
-				6003EB8B13EE6C7EF4D98476FA22F1E2 /* KingDownloadManager.xcconfig */,
-				B586ED72669087C14B352F0303B7645B /* KingDownloadManager-dummy.m */,
-				212A28EDBDB8A089BE181C10AC8F936F /* KingDownloadManager-prefix.pch */,
-				557C102DB114F9843E6C517D765FF9F4 /* KingDownloadManager-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "KingDownloadManagerDemo/Pods/Target Support Files/KingDownloadManager";
-			sourceTree = "<group>";
-		};
-		2087FCE5F68C266B42FF069122DD1E7C /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				D874282EF26D8325DBE2BEB4B4BCCD4B /* KingDownloadManager */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		2E339049816F198EB76DEA4264EF8374 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				B4690263E3C2DD3C24DEAC554FFBD486 /* Foundation.framework */,
-				CAFD15069DBFFAF7E7CD48183E2D230C /* Security.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				2E339049816F198EB76DEA4264EF8374 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		6CD64786E7239E2B7EAFFAF737C1B5D2 /* KingDownloadManager */ = {
-			isa = PBXGroup;
-			children = (
-				7FB05DF117D06CA527C51B1C3DAD58FA /* KingDownLoader.h */,
-				95DCF3F1AE7C649F12522342C8083366 /* KingDownLoader.m */,
-				5E2CDF4DE4BA3D3EA08F35AC63DD460B /* KingDownLoadManager.h */,
-				23B56C6940EE906014F37BE11E490CA5 /* KingDownLoadManager.m */,
-				83274E7B22E642C31B612A18B878567D /* KingDownLoadManagerFileTool.h */,
-				101E4961A9B0EB550FA5A66A8936D905 /* KingDownLoadManagerFileTool.m */,
-				973EA07D169FCA3F2390AFBC16656B42 /* KingDownloadManagerInfo.h */,
-				FDFB335EC5C646C1E402E9117252B560 /* KingDownloadManagerInfo.m */,
-				69E17AF3F2DDA69B9CCA8C6D7F23BEAB /* NSString+MD5.h */,
-				223788E1ACA9E94E4D995CD5E3BE4274 /* NSString+MD5.m */,
+				51F057651D5F454FB7EEA6890384B8E8 /* KingDownLoadConfig.h */,
+				9316A55E277ADC3D5E62BCCA64967DF1 /* KingDownLoadConfig.m */,
+				1794386EF36564C584458555016B3C90 /* KingDownLoader.h */,
+				6553B8ACB5B0E90F47D9EBCBC2BAFF82 /* KingDownLoader.m */,
+				55383556B6353D4D2C6E54428D4F3A89 /* KingDownLoadManager.h */,
+				94958D44B9AC8C9784828E649FBE2082 /* KingDownLoadManager.m */,
+				72E8B579630FEE81D28BEECC9734668F /* KingDownLoadManagerFileTool.h */,
+				D3EB8BC26A5A495AC999029BB29FE76C /* KingDownLoadManagerFileTool.m */,
+				01642C67C99F157F0CE3965965397755 /* KingDownloadManagerInfo.h */,
+				FA05BB565640C88C634EED07B6481FAB /* KingDownloadManagerInfo.m */,
+				E49A4295476C3EF0948580A5BA83F3EA /* NSString+MD5.h */,
+				9E4DBE9578F1276713FBB7A29EF09080 /* NSString+MD5.m */,
+				9FFA8DDF0ADF1BF46DD76F1D5AC05B4D /* Pod */,
+				9288810D2C0080D40C521F280A400F8F /* Support Files */,
 			);
 			name = KingDownloadManager;
-			path = KingDownloadManager;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		53268E24C94AE360CF4D50EFA79BCCC2 /* Pods-KingDownloadManagerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				54ADFFC1B5EDB8D97D569B6A43E01FD8 /* Info.plist */,
+				2177C92483C344813913FED36471613F /* Pods-KingDownloadManagerDemo.modulemap */,
+				9E3ACE8B535A9DB1BAC483A8795300A9 /* Pods-KingDownloadManagerDemo-acknowledgements.markdown */,
+				947F504362836957E7A92DC108B963CE /* Pods-KingDownloadManagerDemo-acknowledgements.plist */,
+				5D9EA023398EBCB2EAEB54F0E5B0A39B /* Pods-KingDownloadManagerDemo-dummy.m */,
+				C3A1EEEC32FC4489098669F3BB27AC68 /* Pods-KingDownloadManagerDemo-frameworks.sh */,
+				7C2BE6BB11AF432E74CB6413B3F610BC /* Pods-KingDownloadManagerDemo-resources.sh */,
+				AE988DF9B2224843F6606C355AD45535 /* Pods-KingDownloadManagerDemo-umbrella.h */,
+				0B565AD5A4EE51AC4FF87452B7B61FBC /* Pods-KingDownloadManagerDemo.debug.xcconfig */,
+				48C7D12D910836C47D5930C74F046ABC /* Pods-KingDownloadManagerDemo.release.xcconfig */,
+			);
+			name = "Pods-KingDownloadManagerDemo";
+			path = "Target Support Files/Pods-KingDownloadManagerDemo";
+			sourceTree = "<group>";
+		};
+		76350208F71DA7DD11A617EB21797DCA /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1AFECC46A07E57F70149CE01177FE63F /* KingDownloadManager */,
+			);
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				2087FCE5F68C266B42FF069122DD1E7C /* Development Pods */,
-				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				76350208F71DA7DD11A617EB21797DCA /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
 				E63A8E3379A59E6EE82674CC4B729FAE /* Products */,
 				860420C8BB9B315843485B68C9C0E907 /* Targets Support Files */,
 			);
@@ -162,37 +157,49 @@
 		860420C8BB9B315843485B68C9C0E907 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				B132F695C170C4A77468745B52C2996D /* Pods-KingDownloadManagerDemo */,
+				53268E24C94AE360CF4D50EFA79BCCC2 /* Pods-KingDownloadManagerDemo */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		B132F695C170C4A77468745B52C2996D /* Pods-KingDownloadManagerDemo */ = {
+		9288810D2C0080D40C521F280A400F8F /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				AD1BB930167364AB3AB0F920ABB42FCC /* Info.plist */,
-				EF9AF30B3D7FF3A0998FD91A739181FA /* Pods-KingDownloadManagerDemo.modulemap */,
-				52B7809A5B9792A8A14BBB697920ABF4 /* Pods-KingDownloadManagerDemo-acknowledgements.markdown */,
-				40CF50A2A927F9D2CCCF1A830C93367D /* Pods-KingDownloadManagerDemo-acknowledgements.plist */,
-				750A3BE4CA7A4EDB9F8FE2F2FF21574D /* Pods-KingDownloadManagerDemo-dummy.m */,
-				B6627CD03CD37562ACB5A20C44823553 /* Pods-KingDownloadManagerDemo-frameworks.sh */,
-				D67B340188AF3D5A953FF421E0BFC996 /* Pods-KingDownloadManagerDemo-resources.sh */,
-				D886DA35BABC04DC0CA9C1F4AFEBCC88 /* Pods-KingDownloadManagerDemo-umbrella.h */,
-				14494449A1587D5BAAA82D8E33378D02 /* Pods-KingDownloadManagerDemo.debug.xcconfig */,
-				BA837903418D52F93D673E269301AB7A /* Pods-KingDownloadManagerDemo.release.xcconfig */,
+				63FDCAA23035F8962D1F5460ABDB6B20 /* Info.plist */,
+				589E6C23E9A2E8E5F9DE111053286997 /* KingDownloadManager.modulemap */,
+				DBB0ABB5795FD6931E9AA16555BD54BB /* KingDownloadManager.xcconfig */,
+				A10C3800D88942B3D556FAC85EEA9E8C /* KingDownloadManager-dummy.m */,
+				9A90D46FE828544865047D488975060D /* KingDownloadManager-prefix.pch */,
+				402CF1376C2CC13DEC122341660DCDB3 /* KingDownloadManager-umbrella.h */,
 			);
-			name = "Pods-KingDownloadManagerDemo";
-			path = "Target Support Files/Pods-KingDownloadManagerDemo";
+			name = "Support Files";
+			path = "KingDownloadManagerDemo/Pods/Target Support Files/KingDownloadManager";
 			sourceTree = "<group>";
 		};
-		D874282EF26D8325DBE2BEB4B4BCCD4B /* KingDownloadManager */ = {
+		9FFA8DDF0ADF1BF46DD76F1D5AC05B4D /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				6CD64786E7239E2B7EAFFAF737C1B5D2 /* KingDownloadManager */,
-				1B83C09BAFE9E5A840F869B2856E399E /* Support Files */,
+				ECCDB406E52821E85F4DFA69E3002473 /* KingDownloadManager.podspec */,
+				0C1FA8A6326A97B9BD19487FC98CA03B /* LICENSE */,
+				3D265C88A720684BBB5A9F071C025FF3 /* README.md */,
 			);
-			name = KingDownloadManager;
-			path = ../..;
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		E63A8E3379A59E6EE82674CC4B729FAE /* Products */ = {
@@ -207,16 +214,17 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		4E554E16AA86C031CC863654FB83629F /* Headers */ = {
+		53700751FEC46802419954B5E67D8303 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				140C9F2A21E2A8B0E28EB9565C08F9B0 /* KingDownLoader.h in Headers */,
-				1809A581F3DAA79CD579E74114A266DC /* KingDownloadManager-umbrella.h in Headers */,
-				5DB5F745F8635ED48F139BF8879B6457 /* KingDownLoadManager.h in Headers */,
-				887DA142FC8425D0AA04142294AB5E8F /* KingDownLoadManagerFileTool.h in Headers */,
-				6083C4ACE91A62644FB5C837839A7CEF /* KingDownloadManagerInfo.h in Headers */,
-				73B951AA746A658B79FC3F2522EE5202 /* NSString+MD5.h in Headers */,
+				1259052A8C1E292453F6BAC25DCFB9EC /* KingDownLoadConfig.h in Headers */,
+				7DC542C06D0247953FEAF6583E93AFC3 /* KingDownLoader.h in Headers */,
+				9F8E5CD51C488C282F8026891DA49DF9 /* KingDownloadManager-umbrella.h in Headers */,
+				20C4593C184E9542BBD55DCBE4C5F9A3 /* KingDownLoadManager.h in Headers */,
+				A73E61E98118AE5A5BA7B3106A7EF65E /* KingDownLoadManagerFileTool.h in Headers */,
+				7D98723440E4F92DF53B777EDCA708AE /* KingDownloadManagerInfo.h in Headers */,
+				D78261B5B8DCF5510554DDF084CA03F7 /* NSString+MD5.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,13 +239,13 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		1C711F5071E6BC85193929A37A974FED /* KingDownloadManager */ = {
+		2A090C7424C67985C2FAB8248C93079F /* KingDownloadManager */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8644B20BCAE5BAB2E0D1A4F057B13300 /* Build configuration list for PBXNativeTarget "KingDownloadManager" */;
+			buildConfigurationList = 3FC280731114D1535431C6841B21769F /* Build configuration list for PBXNativeTarget "KingDownloadManager" */;
 			buildPhases = (
-				F59256BD87863246C2DAB6E8639B5734 /* Sources */,
-				9E89B930F1C13CCAC56B4A817BA125E2 /* Frameworks */,
-				4E554E16AA86C031CC863654FB83629F /* Headers */,
+				5002010CFE2B7C954E0AB8BA4F7E14EF /* Sources */,
+				233A2D8D53D6D5947B3C83A0913FB47C /* Frameworks */,
+				53700751FEC46802419954B5E67D8303 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -272,8 +280,8 @@
 		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0700;
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -287,7 +295,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1C711F5071E6BC85193929A37A974FED /* KingDownloadManager */,
+				2A090C7424C67985C2FAB8248C93079F /* KingDownloadManager */,
 				7AAF71F91F4A9CBDB98118FF16984DC0 /* Pods-KingDownloadManagerDemo */,
 			);
 		};
@@ -302,16 +310,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F59256BD87863246C2DAB6E8639B5734 /* Sources */ = {
+		5002010CFE2B7C954E0AB8BA4F7E14EF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F8AD9D20ED89EC78D01EC62AE8316071 /* KingDownLoader.m in Sources */,
-				84BD4E4EFE7F16A067CDBF2D49910396 /* KingDownloadManager-dummy.m in Sources */,
-				219438AE2B46A336CDC93FE8EB41B8DA /* KingDownLoadManager.m in Sources */,
-				17C4A8852BE1C0790BCEF0F3F92F5904 /* KingDownLoadManagerFileTool.m in Sources */,
-				3B456CF2ADCF24DD580EBD0DF61E52D3 /* KingDownloadManagerInfo.m in Sources */,
-				9F0DE35510464C1D1F166AFAB4504B74 /* NSString+MD5.m in Sources */,
+				CC3904653D6F0693B2AFBF19E8E4F49A /* KingDownLoadConfig.m in Sources */,
+				1EE13EE5A70638EC98E9CF5EA3969B81 /* KingDownLoader.m in Sources */,
+				A6E5640DA5CDCD05C8AF79DD85CBC3A8 /* KingDownloadManager-dummy.m in Sources */,
+				C8A7A91C015D3449CC99A4BDAE94DE47 /* KingDownLoadManager.m in Sources */,
+				C2074816AE2236BF86570C6C6D6C565A /* KingDownLoadManagerFileTool.m in Sources */,
+				D687B62D0BA5A225FD276BA591B1E116 /* KingDownloadManagerInfo.m in Sources */,
+				9FFF36AA85B568F54F456C97D573A42D /* NSString+MD5.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,225 +330,258 @@
 		BCF37882B28A10E0690F064B660D75B5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = KingDownloadManager;
-			target = 1C711F5071E6BC85193929A37A974FED /* KingDownloadManager */;
+			target = 2A090C7424C67985C2FAB8248C93079F /* KingDownloadManager */;
 			targetProxy = C77B6C0DF7938941B259CF210F6876AD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		015A368F878AC3E2CEAE21DDE8026304 /* Debug */ = {
+		1EE19F5DD95931924296F637BF18BD8F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
 				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"POD_CONFIGURATION_DEBUG=1",
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		4206F9BCC867E57D9A939CC65BA0E49C /* Release */ = {
+		5924183A3134FACB6FB26989F6DB52AF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6003EB8B13EE6C7EF4D98476FA22F1E2 /* KingDownloadManager.xcconfig */;
+			baseConfigurationReference = 0B565AD5A4EE51AC4FF87452B7B61FBC /* Pods-KingDownloadManagerDemo.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/KingDownloadManager/KingDownloadManager-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/KingDownloadManager/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-KingDownloadManagerDemo/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/KingDownloadManager/KingDownloadManager.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = KingDownloadManager;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-KingDownloadManagerDemo/Pods-KingDownloadManagerDemo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
+			name = Debug;
+		};
+		920760E3CE372BEF87FB577571A2C252 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBB0ABB5795FD6931E9AA16555BD54BB /* KingDownloadManager.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/KingDownloadManager/KingDownloadManager-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KingDownloadManager/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/KingDownloadManager/KingDownloadManager.modulemap";
+				PRODUCT_MODULE_NAME = KingDownloadManager;
+				PRODUCT_NAME = KingDownloadManager;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C8B0743B21AE7D1D8921822002EAA582 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48C7D12D910836C47D5930C74F046ABC /* Pods-KingDownloadManagerDemo.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-KingDownloadManagerDemo/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-KingDownloadManagerDemo/Pods-KingDownloadManagerDemo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
 			name = Release;
 		};
-		44CDBB6D11DE06DB64D6268622BDC47E /* Release */ = {
+		CB2E531A46D78C6091D218DD950F1764 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBB0ABB5795FD6931E9AA16555BD54BB /* KingDownloadManager.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/KingDownloadManager/KingDownloadManager-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KingDownloadManager/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/KingDownloadManager/KingDownloadManager.modulemap";
+				PRODUCT_MODULE_NAME = KingDownloadManager;
+				PRODUCT_NAME = KingDownloadManager;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F4568DEE257655D290C2B9CEAB37C934 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
 				CODE_SIGNING_REQUIRED = NO;
-				COPY_PHASE_STRIP = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"POD_CONFIGURATION_RELEASE=1",
 					"$(inherited)",
 				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		5EA66DF2EDF43946753BB55A874F531D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6003EB8B13EE6C7EF4D98476FA22F1E2 /* KingDownloadManager.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/KingDownloadManager/KingDownloadManager-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/KingDownloadManager/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/KingDownloadManager/KingDownloadManager.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = KingDownloadManager;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		948054EC0FAB5D68A086C39B6297F699 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 14494449A1587D5BAAA82D8E33378D02 /* Pods-KingDownloadManagerDemo.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-KingDownloadManagerDemo/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-KingDownloadManagerDemo/Pods-KingDownloadManagerDemo.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_KingDownloadManagerDemo;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		F79A424BD2AED96C3BD22D75BF403663 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BA837903418D52F93D673E269301AB7A /* Pods-KingDownloadManagerDemo.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-KingDownloadManagerDemo/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-KingDownloadManagerDemo/Pods-KingDownloadManagerDemo.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_KingDownloadManagerDemo;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -549,17 +591,17 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				015A368F878AC3E2CEAE21DDE8026304 /* Debug */,
-				44CDBB6D11DE06DB64D6268622BDC47E /* Release */,
+				1EE19F5DD95931924296F637BF18BD8F /* Debug */,
+				F4568DEE257655D290C2B9CEAB37C934 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8644B20BCAE5BAB2E0D1A4F057B13300 /* Build configuration list for PBXNativeTarget "KingDownloadManager" */ = {
+		3FC280731114D1535431C6841B21769F /* Build configuration list for PBXNativeTarget "KingDownloadManager" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5EA66DF2EDF43946753BB55A874F531D /* Debug */,
-				4206F9BCC867E57D9A939CC65BA0E49C /* Release */,
+				920760E3CE372BEF87FB577571A2C252 /* Debug */,
+				CB2E531A46D78C6091D218DD950F1764 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -567,8 +609,8 @@
 		F973F27438709CB97339DB5285EF3612 /* Build configuration list for PBXNativeTarget "Pods-KingDownloadManagerDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				948054EC0FAB5D68A086C39B6297F699 /* Debug */,
-				F79A424BD2AED96C3BD22D75BF403663 /* Release */,
+				5924183A3134FACB6FB26989F6DB52AF /* Debug */,
+				C8B0743B21AE7D1D8921822002EAA582 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

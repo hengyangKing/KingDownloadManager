@@ -8,8 +8,7 @@
 
 #import "KingDownLoader.h"
 #import "KingDownLoadManagerFileTool.h"
-//缓存地址
-#define kCachePath NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES).firstObject
+
 //临时地址
 #define kTempPath NSTemporaryDirectory()
 
@@ -19,7 +18,12 @@
     long long _totalSize;
 }
 @property(nonatomic,strong)NSURLSession *session;
+
 @property(nonatomic,strong)NSURL *url;
+
+//预设存储路径
+@property(nonatomic,copy)NSString *savePath;
+
 //下载完成路径
 @property(nonatomic,copy)NSString *downloadedPath;
 //下载缓存路径
@@ -32,6 +36,7 @@
 @property(nonatomic,weak)NSURLSessionDataTask *dataTask;
 
 @property(nonatomic,assign)float progress;
+
 
 @end
 @implementation KingDownLoader
@@ -49,8 +54,7 @@
 {
     _url=url;
     NSString *fileName=_url.lastPathComponent;
-    
-    self.downloadedPath = [kCachePath stringByAppendingPathComponent:fileName];
+    self.downloadedPath = [self.savePath stringByAppendingPathComponent:fileName];
     self.downloadingPath = [kTempPath stringByAppendingPathComponent:fileName];
     
 }
@@ -76,6 +80,11 @@
     
 }
 #pragma mark func
+-(void)downLoadWithUrl:(NSURL *)url andSavePath:(NSString *)savePath andState:(KingDownLoaderStateChangeBlock)state andProgress:(KingDownLoaderDownloadProgressBlock)progress andSuccess:(KingDownLoaderDownloadSuccessBlock)success andFailed:(KingDownLoaderDownloadFailedBlock)failed {
+    
+    [self setSavePath:savePath];
+    [self downLoadWithUrl:url andState:state andProgress:progress andSuccess:success andFailed:failed];
+}
 -(void)downLoadWithUrl:(NSURL *)url andState:(KingDownLoaderStateChangeBlock)state andProgress:(KingDownLoaderDownloadProgressBlock)progress andSuccess:(KingDownLoaderDownloadSuccessBlock)success andFailed:(KingDownLoaderDownloadFailedBlock)failed
 {
     [self setStateChangeBlock:state];
